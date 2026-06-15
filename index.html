@@ -7298,7 +7298,10 @@ EHU_RCtrl.adjFont = function(delta) {
 var _origRRestore = EHU_RCtrl.restore.bind(EHU_RCtrl);
 EHU_RCtrl.restore = function() {
   _origRRestore();
-  var fs = parseInt(localStorage.getItem('ehu-fontsize')) || 16;
+  var sizes = [12,13,14,15,16,17,18,20,22];
+  var idx = parseInt(localStorage.getItem('ehu-fontsize') || '7', 10);
+  idx = Math.min(sizes.length - 1, Math.max(0, idx));
+  var fs = sizes[idx];
   var rc = document.getElementById('readerContent');
   if (rc) rc.style.fontSize = fs + 'px';
   var v = document.getElementById('rcFontVal');
