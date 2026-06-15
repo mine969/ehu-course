@@ -2450,6 +2450,7 @@ input#accentColorPicker { width: 22px; height: 22px; padding: 0; border: none; b
   background: var(--s1); border: 1px solid var(--b1);
   border-radius: 10px; padding: 12px 16px;
   cursor: pointer; transition: border-color .15s;
+  width: 100%; color: inherit; font-family: inherit; text-align: left;
 }
 .rv-item:hover { border-color: var(--acc); }
 .rv-item-title { font-size: 14px; font-weight: 500; color: var(--t1); flex: 1; min-width: 0;
@@ -6474,6 +6475,20 @@ var EHU_Recent = {
       if (act) act.style.display = 'none';
     }
   },
+  open: function(path) {
+    if (!path || typeof Reader === 'undefined') return;
+    var partObj = null;
+    if (typeof EHU_COURSES !== 'undefined') {
+      for (var i = 0; i < EHU_COURSES.length; i++) {
+        var part = EHU_COURSES[i];
+        if (part.chapters && part.chapters.some(function(ch){ return ch.path === path; })) {
+          partObj = part;
+          break;
+        }
+      }
+    }
+    Reader.open(path, partObj ? partObj.name : '', partObj);
+  },
   render: function() {
     var list = this.getAll();
     var sec  = document.getElementById('recentlyViewedSection');
@@ -6486,11 +6501,20 @@ var EHU_Recent = {
     if (act) act.style.display = 'block';
     cont.innerHTML = list.map(function(r) {
       var ago = EHU_Recent._timeAgo(r.ts);
-      return '<div class="rv-item" onclick="Reader.open(' + JSON.stringify(r.path) + ',' + JSON.stringify(r.partName) + ',null)">'
-        + '<span class="rv-item-title">' + (r.title || r.path) + '</span>'
-        + '<span class="rv-item-meta">'  + (r.partName || '') + ' &nbsp;·&nbsp; ' + ago + '</span>'
-        + '</div>';
+      return '<button type="button" class="rv-item" data-recent-path="' + EHU_Recent._escape(r.path) + '">'
+        + '<span class="rv-item-title">' + EHU_Recent._escape(r.title || r.path) + '</span>'
+        + '<span class="rv-item-meta">'  + EHU_Recent._escape(r.partName || '') + ' &nbsp;·&nbsp; ' + ago + '</span>'
+        + '</button>';
     }).join('');
+    cont.onclick = function(e) {
+      var row = e.target.closest && e.target.closest('.rv-item[data-recent-path]');
+      if (row) EHU_Recent.open(row.dataset.recentPath);
+    };
+  },
+  _escape: function(str) {
+    return String(str || '').replace(/[&<>"]/g, function(ch) {
+      return ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' })[ch];
+    });
   },
   _timeAgo: function(ts) {
     var s = Math.round((Date.now() - ts) / 1000);
