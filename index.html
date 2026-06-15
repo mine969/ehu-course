@@ -2425,6 +2425,37 @@ input#accentColorPicker { width: 22px; height: 22px; padding: 0; border: none; b
   gap: 8px;
   margin-top: 10px;
 }
+
+/* ── Activity section cards ── */
+.activity-continue-card {
+  display: flex; align-items: center; gap: 16px;
+  background: var(--s1); border: 1px solid var(--b2);
+  border-radius: 12px; padding: 16px 20px;
+  cursor: pointer; transition: border-color .18s, background .18s;
+}
+.activity-continue-card:hover { border-color: var(--acc); background: var(--s2); }
+.ac-icon  { font-size: 26px; flex-shrink: 0; }
+.ac-body  { flex: 1; min-width: 0; }
+.ac-label { font-size: 11px; font-weight: 700; text-transform: uppercase;
+            letter-spacing: .08em; color: var(--acc); margin-bottom: 4px; }
+.ac-title { font-size: 15px; font-weight: 600; color: var(--t1);
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ac-part  { font-size: 12px; color: var(--t4); margin-top: 3px; }
+.ac-arrow { color: var(--t4); font-size: 20px; flex-shrink: 0; }
+.rv-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.rv-title  { font-size: 15px; font-weight: 600; color: var(--t2); }
+.rv-list   { display: flex; flex-direction: column; gap: 6px; }
+.rv-item {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--s1); border: 1px solid var(--b1);
+  border-radius: 10px; padding: 12px 16px;
+  cursor: pointer; transition: border-color .15s;
+}
+.rv-item:hover { border-color: var(--acc); }
+.rv-item-title { font-size: 14px; font-weight: 500; color: var(--t1); flex: 1; min-width: 0;
+                 white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rv-item-meta  { font-size: 12px; color: var(--t4); white-space: nowrap; margin-left: 12px; }
+.course-filter-wrap { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
 </style>
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ethical Hacking University">
@@ -2718,6 +2749,7 @@ input#accentColorPicker { width: 22px; height: 22px; padding: 0; border: none; b
             <button class="pill" data-lv="advanced">Advanced</button>
           </div>
         </div>
+        <div id="courseFilterWrap" class="course-filter-wrap" style="display:none"></div>
         <div class="courses-search-wrap">
           <svg viewBox="0 0 20 20" fill="none">
             <path stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
