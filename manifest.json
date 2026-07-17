@@ -1,0 +1,33 @@
+{
+  "name": "Ethical Hacking University",
+  "short_name": "EHU",
+  "description": "A complete browser-based cybersecurity curriculum — 335 chapters across 25 subject areas, from computing fundamentals to professional offensive and defensive security.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#090e1a",
+  "theme_color": "#1e1e2e",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='38' fill='%23090e1a'/%3E%3Ctext x='50%25' y='58%25' font-family='Arial Black,sans-serif' font-size='108' font-weight='900' fill='%233b82f6' dominant-baseline='middle' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='100' fill='%23090e1a'/%3E%3Ctext x='50%25' y='58%25' font-family='Arial Black,sans-serif' font-size='288' font-weight='900' fill='%233b82f6' dominant-baseline='middle' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='100' fill='%231e1e2e'/%3E%3Ctext x='50%25' y='58%25' font-size='300'%3E%F0%9F%94%92%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["education", "security"]
+}
