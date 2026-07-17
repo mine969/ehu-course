@@ -22,8 +22,8 @@ The curriculum emphasizes both chairs:
 
 ## Course Scope
 
-- 306 chapters
-- 24 course parts
+- 335 chapters
+- 25 course parts
 - Beginner, intermediate, advanced, and mixed-level material
 - Offensive security, defensive security, cloud, web, network, AD, mobile, wireless, IoT, malware, AI security, and career guidance
 - Built-in reader and learning tools
@@ -67,30 +67,31 @@ The curriculum starts from fundamentals and builds toward real-world security wo
 
 | Part | Name | Level | Chapters | Focus |
 | --- | --- | --- | ---: | --- |
-| 00 | Getting Started | Beginner | 11 | Paths, study systems, environment setup |
-| 01 | Foundations | Beginner | 14 | Binary, CPU, OS, cryptography, legal ethics |
-| 02 | Networking | Beginner | 17 | TCP/IP, DNS, HTTP, TLS, Wireshark |
-| 03 | OS & Linux | Beginner | 16 | Linux commands, permissions, shell scripting |
-| 04 | Programming | Beginner | 14 | Python, Bash, SQL, regex, APIs |
-| 05 | Web Fundamentals | Intermediate | 10 | HTTP, cookies, same-origin policy, OWASP |
-| 06 | Web Pentesting | Intermediate | 27 | SQLi, XSS, SSRF, IDOR, JWT, OAuth, CSRF |
-| 07 | API Security | Intermediate | 9 | REST, GraphQL, OWASP API Top 10 |
-| 08 | Network Pentesting | Intermediate | 17 | Nmap, Metasploit, privilege escalation, pivoting |
-| 09 | Active Directory | Advanced | 14 | Kerberos, DCSync, Golden Tickets, ADCS |
-| 10 | Cloud Security | Advanced | 16 | AWS, Azure, GCP, Kubernetes, CI/CD |
-| 11 | Bug Bounty | Intermediate | 8 | Programs, recon methodology, reporting |
-| 12 | Red Team Ops | Advanced | 11 | ATT&CK, C2 frameworks, defense evasion |
-| 13 | Vuln Research | Advanced | 16 | Fuzzing, reverse engineering, exploit development |
-| 14 | Hacker Psychology | Intermediate | 10 | Cognitive biases, ethics, decision making |
-| 15 | Career | Beginner | 10 | Certifications, portfolio, freelancing |
+| 00 | Getting Started | Beginner | 12 | Paths, study systems, environment setup |
+| 01 | Foundations | Beginner | 15 | Binary, CPU, OS, cryptography, legal ethics |
+| 02 | Networking | Beginner | 18 | TCP/IP, DNS, HTTP, TLS, Wireshark |
+| 03 | OS & Linux | Beginner | 17 | Linux commands, permissions, shell scripting |
+| 04 | Programming | Beginner | 15 | Python, Bash, SQL, regex, APIs |
+| 05 | Web Fundamentals | Intermediate | 11 | HTTP, cookies, same-origin policy, OWASP |
+| 06 | Web Pentesting | Intermediate | 28 | SQLi, XSS, SSRF, IDOR, JWT, OAuth, CSRF |
+| 07 | API Security | Intermediate | 10 | REST, GraphQL, OWASP API Top 10 |
+| 08 | Network Pentesting | Intermediate | 18 | Nmap, Metasploit, privilege escalation, pivoting |
+| 09 | Active Directory | Advanced | 15 | Kerberos, DCSync, Golden Tickets, ADCS |
+| 10 | Cloud Security | Advanced | 17 | AWS, Azure, GCP, Kubernetes, CI/CD |
+| 11 | Bug Bounty | Intermediate | 9 | Programs, recon methodology, reporting |
+| 12 | Red Team Ops | Advanced | 12 | ATT&CK, C2 frameworks, defense evasion |
+| 13 | Vuln Research | Advanced | 17 | Fuzzing, reverse engineering, exploit development |
+| 14 | Hacker Psychology | Intermediate | 11 | Cognitive biases, ethics, decision making |
+| 15 | Career | Beginner | 11 | Certifications, portfolio, freelancing |
 | 16 | OSINT & Social Eng. | Intermediate | 19 | Recon, phishing, physical social engineering |
-| 17 | Mobile Security | Advanced | 7 | Android, iOS, Frida, mobile attack chains |
-| 18 | Wireless Security | Advanced | 6 | WiFi, Bluetooth, RF attacks, WPA3 |
-| 19 | IoT & Hardware | Advanced | 7 | UART, firmware analysis, Flipper Zero |
-| 20 | Attack Chains | Advanced | 6 | End-to-end scenarios, CTF practice drills |
-| 21 | AI Security | Advanced | 13 | Prompt injection, supply chain, deepfakes |
-| 22 | Malware Analysis | Advanced | 12 | Static and dynamic analysis, rootkits |
-| 23 | Appendices | All | 16 | Tools, glossary, certs, cheat sheets |
+| 17 | Mobile Security | Advanced | 8 | Android, iOS, Frida, mobile attack chains |
+| 18 | Wireless Security | Advanced | 7 | WiFi, Bluetooth, RF attacks, WPA3 |
+| 19 | IoT & Hardware | Advanced | 8 | UART, firmware analysis, Flipper Zero |
+| 20 | Attack Chains | Advanced | 7 | End-to-end scenarios, CTF practice drills |
+| 21 | AI Security | Advanced | 14 | Prompt injection, supply chain, deepfakes |
+| 22 | Malware Analysis | Advanced | 13 | Static and dynamic analysis, rootkits |
+| 23 | AI-Orchestrated Workflows | Advanced | 7 | Agentic pipelines, AI-assisted offense/defense |
+| 24 | Appendices | All | 16 | Tools, glossary, certs, cheat sheets |
 
 ## Suggested Learning Paths
 
